@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/npEditText"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="25dp"
+        android:hint="@string/enter_number_of_processes"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/nrEditText"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/enter_number_of_resources"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/allocationEditText"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/enter_allocation_matrix_e_g_1_2_2_1_n1_0_3_3"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/maxEditText"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/enter_max_matrix_e_g_3_3_2_2_n1_1_3_4"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/availableEditText"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/enter_available_matrix_e_g_3_1_1_2"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+</LinearLayout>

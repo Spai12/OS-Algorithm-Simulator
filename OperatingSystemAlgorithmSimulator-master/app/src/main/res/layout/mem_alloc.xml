@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context=".memoryAllocation">
+
+    <RadioGroup
+        android:id="@+id/selectAlgorithm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/firstfitbtn"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/first_fit" />
+
+        <RadioButton
+            android:id="@+id/bestfitbtn"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/best_fit" />
+
+        <RadioButton
+            android:id="@+id/worstfitbtn"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/worst_fit" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/processCreateCol"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/create_process"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetLeft="15dp"
+                android:insetRight="15dp"
+                android:text="@string/add_process" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/blockCreateCol"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/create_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetLeft="15dp"
+                android:insetRight="15dp"
+                android:text="@string/add_memory_block" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:text="@string/submit" />
+    </LinearLayout>
+</LinearLayout>
