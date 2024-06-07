@@ -1,5 +1,3 @@
-Synopsis:
-
 The project aims at creating a mobile application that is able to visually represent the 
 working of operaƟng system algorithms for process scheduling, process synchronisation,
 deadlock detection and prevention, disk scheduling, etc. The visual representation will be in 
